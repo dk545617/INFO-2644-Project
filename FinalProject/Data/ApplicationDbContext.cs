@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FinalProject.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,5 +13,8 @@ namespace FinalProject.Data
             : base(options)
         {
         }
+
+        public DbSet<Menu> MenuItems { get; set; }
+
     }
 }
